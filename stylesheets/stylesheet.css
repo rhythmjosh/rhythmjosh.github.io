@@ -370,6 +370,8 @@ Full-Width Styles
 
 
 
+
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -422,4 +424,24 @@ Small Device Styles
     font-size: 11px;
   }
 
+}
+
+
+/* repository list */
+.my-repos {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+.my-repos li {
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.my-repos li: last-child {
+  border-bottom: none;
 }
