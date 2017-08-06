@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <!--jQuery 3.2.1-->
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+
+    <script src="player.js"></script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+    <div class="auth__wrapper">
+        <input id="auth__token" type="text" placeholder="Enter the Spotify AuthToken" value="BQACTZPLsKuO7KzZypBBtddwLWj0i34aC6mtY2hXdIHsw0XfrsS76tRMoC3SAWC4KioUpwdXQVN_hD00Qj1aLGvHy67FyokaB14-urhgNrM2pmEPD7N1himJV9ltUrtcA4GwncBIPEzXXKe1MXy5sv_rQ4EArhY">
+        <button id="init__app">Start the App</button>
+    </div>
+    <div class="wrapper player__wrapper">
+        <section class="image__container">
+            <div class="video__image">
+            </div>
+        </section>
+        <section class="player__container">
+            <div class="player__buttons--section">
+                <ul class="player__buttons--list">
+                    <li class="back__button">
+                    </li>
+                    <li class="play__button">
+                    </li>
+                    <li class="pause__button">
+                    </li>
+                    <li  class="forward__button">
+                    </li>
+                </ul>
+            </div>
+            <div class="player__video--player">
+                <div class="progress__bar--text">
+                    <h5 class="artist__name"></h5>
+                    <h5 class="track__name"></h5>
+                </div>
+                <div class="progress__bar">
+                    <div class="progress__bar--playing"></div>
+                </div>
+                <audio class="audio__player" preload='none'>
+                    <source src='the url to the audio' type='audio/wav' />
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="player__timers">
+                    <div class="player__start--timer">0:00</div>
+                    <div class="player__stop--timer">0:00</div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+</body>
+</html>
